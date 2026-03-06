@@ -2,6 +2,13 @@
 
 A Minecraft Fabric mod that adds majestic ocean creatures to the game, bringing the deep blue seas to life.
 
+## Screenshots
+
+<p align="center">
+  <img src="screenshots/giant_squid.png" width="400" alt="Giant Squid">
+  <img src="screenshots/humpback_whale.png" width="400" alt="Humpback Whale">
+</p>
+
 ## Features
 
 ### 10 New Ocean Creatures
