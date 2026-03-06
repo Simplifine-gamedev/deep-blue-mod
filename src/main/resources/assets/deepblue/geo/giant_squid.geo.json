@@ -1,0 +1,424 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.giant_squid",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 5,
+				"visible_bounds_height": 5,
+				"visible_bounds_offset": [
+					0,
+					0.5,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						24,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						24,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								16,
+								-6
+							],
+							"size": [
+								16,
+								16,
+								12
+							],
+							"uv": [
+								0,
+								36
+							]
+						}
+					]
+				},
+				{
+					"name": "mantle",
+					"parent": "body",
+					"pivot": [
+						0,
+						32,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								24,
+								-10
+							],
+							"size": [
+								14,
+								14,
+								20
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "left_fin",
+					"parent": "mantle",
+					"pivot": [
+						7,
+						38,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								5,
+								30,
+								-5
+							],
+							"size": [
+								8,
+								2,
+								10
+							],
+							"uv": [
+								0,
+								66
+							]
+						}
+					]
+				},
+				{
+					"name": "right_fin",
+					"parent": "mantle",
+					"pivot": [
+						-7,
+						38,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-13,
+								30,
+								-5
+							],
+							"size": [
+								8,
+								2,
+								10
+							],
+							"uv": [
+								0,
+								80
+							]
+						}
+					]
+				},
+				{
+					"name": "tent1",
+					"parent": "body",
+					"pivot": [
+						-6,
+						16,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								2.5,
+								-8,
+								-1.5
+							],
+							"size": [
+								3,
+								24,
+								3
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "tent2",
+					"parent": "body",
+					"pivot": [
+						-4.24264,
+						16,
+						4.24264
+					]
+				},
+				{
+					"name": "tent3",
+					"parent": "body",
+					"pivot": [
+						0,
+						16,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								-8,
+								4.5
+							],
+							"size": [
+								3,
+								24,
+								3
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "tent4",
+					"parent": "body",
+					"pivot": [
+						4.24264,
+						16,
+						4.24264
+					]
+				},
+				{
+					"name": "tent5",
+					"parent": "body",
+					"pivot": [
+						-7,
+						16,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6.5,
+								-8,
+								-1.5
+							],
+							"size": [
+								3,
+								24,
+								3
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "tent6",
+					"parent": "body",
+					"pivot": [
+						4.24264,
+						16,
+						-4.24264
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6.3,
+								-8,
+								-5.7
+							],
+							"size": [
+								3,
+								24,
+								3
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "tent7",
+					"parent": "body",
+					"pivot": [
+						0,
+						16,
+						-6
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								-8,
+								-5.5
+							],
+							"size": [
+								3,
+								24,
+								3
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "tent8",
+					"parent": "body",
+					"pivot": [
+						-4.24264,
+						16,
+						-4.24264
+					],
+					"cubes": [
+						{
+							"origin": [
+								2.3,
+								-8,
+								-5.7
+							],
+							"size": [
+								3,
+								24,
+								3
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "long_tent_l",
+					"parent": "body",
+					"pivot": [
+						4,
+						16,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								2.5,
+								-16,
+								4.5
+							],
+							"size": [
+								3,
+								32,
+								3
+							],
+							"uv": [
+								14,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "club_l",
+					"parent": "long_tent_l",
+					"pivot": [
+						4,
+						-16,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								1.5,
+								-26,
+								3.5
+							],
+							"size": [
+								5,
+								8,
+								5
+							],
+							"uv": [
+								0,
+								132
+							]
+						}
+					]
+				},
+				{
+					"name": "long_tent_r",
+					"parent": "body",
+					"pivot": [
+						-4,
+						16,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5.5,
+								-16,
+								4.5
+							],
+							"size": [
+								3,
+								32,
+								3
+							],
+							"uv": [
+								14,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "club_r",
+					"parent": "long_tent_r",
+					"pivot": [
+						-4,
+						-16,
+						6
+					],
+					"cubes": [
+						{
+							"origin": [
+								-6.5,
+								-26,
+								3.5
+							],
+							"size": [
+								5,
+								8,
+								5
+							],
+							"uv": [
+								0,
+								132
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

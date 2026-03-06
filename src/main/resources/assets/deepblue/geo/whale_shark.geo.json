@@ -1,0 +1,325 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.whale_shark",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [
+					0,
+					1,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-7,
+								0,
+								-18
+							],
+							"size": [
+								14,
+								10,
+								36
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						5,
+						-18
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								-28
+							],
+							"size": [
+								16,
+								8,
+								10
+							],
+							"uv": [
+								0,
+								48
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_base",
+					"pivot": [
+						0,
+						5,
+						18
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								0,
+								18
+							],
+							"size": [
+								8,
+								8,
+								10
+							],
+							"uv": [
+								0,
+								68
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_fin",
+					"pivot": [
+						0,
+						5,
+						28
+					],
+					"parent": "tail_base",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								-2,
+								28
+							],
+							"size": [
+								2,
+								14,
+								8
+							],
+							"uv": [
+								0,
+								88
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsal1",
+					"pivot": [
+						0,
+						10,
+						-5
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								5,
+								-8
+							],
+							"size": [
+								2,
+								8,
+								6
+							],
+							"uv": [
+								0,
+								112
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsal2",
+					"pivot": [
+						0,
+						8,
+						10
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								5,
+								8
+							],
+							"size": [
+								2,
+								4,
+								4
+							],
+							"uv": [
+								0,
+								128
+							]
+						}
+					]
+				},
+				{
+					"name": "left_pec",
+					"pivot": [
+						-7,
+						2,
+						-8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-17,
+								0,
+								-11
+							],
+							"size": [
+								14,
+								2,
+								6
+							],
+							"uv": [
+								0,
+								138
+							]
+						}
+					]
+				},
+				{
+					"name": "right_pec",
+					"pivot": [
+						7,
+						2,
+						-8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								3,
+								0,
+								-11
+							],
+							"size": [
+								14,
+								2,
+								6
+							],
+							"uv": [
+								0,
+								148
+							]
+						}
+					]
+				},
+				{
+					"name": "left_pelvic",
+					"pivot": [
+						-4,
+						2,
+						8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								0,
+								6
+							],
+							"size": [
+								6,
+								1,
+								4
+							],
+							"uv": [
+								0,
+								158
+							]
+						}
+					]
+				},
+				{
+					"name": "right_pelvic",
+					"pivot": [
+						4,
+						2,
+						8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								2,
+								0,
+								6
+							],
+							"size": [
+								6,
+								1,
+								4
+							],
+							"uv": [
+								0,
+								166
+							]
+						}
+					]
+				},
+				{
+					"name": "saddle",
+					"pivot": [
+						0,
+						10,
+						0
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								5,
+								-5
+							],
+							"size": [
+								8,
+								3,
+								10
+							],
+							"uv": [
+								42,
+								138
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

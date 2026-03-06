@@ -1,0 +1,244 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.hammerhead_shark",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [
+					0,
+					1,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						4,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-2.5,
+								2,
+								-9
+							],
+							"size": [
+								5,
+								5,
+								18
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						6,
+						-8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								5,
+								-13.5
+							],
+							"size": [
+								16,
+								2,
+								5
+							],
+							"uv": [
+								0,
+								24
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_base",
+					"pivot": [
+						0,
+						4,
+						8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								2,
+								9
+							],
+							"size": [
+								4,
+								4,
+								6
+							],
+							"uv": [
+								0,
+								32
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_end",
+					"pivot": [
+						0,
+						4,
+						13
+					],
+					"parent": "tail_base",
+					"cubes": [
+						{
+							"origin": [
+								-1.5,
+								2.5,
+								15
+							],
+							"size": [
+								3,
+								3,
+								6
+							],
+							"uv": [
+								0,
+								44
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_fin",
+					"pivot": [
+						0,
+						4,
+						22
+					],
+					"parent": "tail_end",
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								-2,
+								21
+							],
+							"size": [
+								1,
+								10,
+								6
+							],
+							"uv": [
+								0,
+								54
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsal",
+					"pivot": [
+						0,
+						10,
+						0
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-0.5,
+								7,
+								-5
+							],
+							"size": [
+								1,
+								7,
+								6
+							],
+							"uv": [
+								16,
+								44
+							]
+						}
+					]
+				},
+				{
+					"name": "left_fin",
+					"pivot": [
+						-4,
+						3,
+						2
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								2,
+								-0.5
+							],
+							"size": [
+								8,
+								1,
+								5
+							],
+							"uv": [
+								36,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "right_fin",
+					"pivot": [
+						4,
+						3,
+						2
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								0,
+								2,
+								-0.5
+							],
+							"size": [
+								8,
+								1,
+								5
+							],
+							"uv": [
+								36,
+								8
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

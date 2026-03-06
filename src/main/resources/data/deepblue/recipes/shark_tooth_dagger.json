@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "TT",
+    "TT",
+    " S"
+  ],
+  "key": {
+    "T": {
+      "item": "deepblue:shark_tooth"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "deepblue:shark_tooth_dagger",
+    "count": 1
+  }
+}

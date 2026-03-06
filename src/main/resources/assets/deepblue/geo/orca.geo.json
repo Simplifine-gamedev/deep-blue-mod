@@ -1,0 +1,217 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.orca",
+				"texture_width": 128,
+				"texture_height": 128,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [
+					0,
+					1,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0,
+								-14
+							],
+							"size": [
+								10,
+								10,
+								28
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						5,
+						-14
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-4.5,
+								0.5,
+								-22
+							],
+							"size": [
+								9,
+								9,
+								8
+							],
+							"uv": [
+								0,
+								42
+							]
+						}
+					]
+				},
+				{
+					"name": "tail",
+					"pivot": [
+						0,
+						5,
+						20
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								2,
+								14
+							],
+							"size": [
+								6,
+								6,
+								12
+							],
+							"uv": [
+								0,
+								62
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_fluke",
+					"pivot": [
+						0,
+						4,
+						32
+					],
+					"parent": "tail",
+					"cubes": [
+						{
+							"origin": [
+								-8,
+								3,
+								28
+							],
+							"size": [
+								16,
+								2,
+								8
+							],
+							"uv": [
+								0,
+								82
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsal",
+					"pivot": [
+						0,
+						10,
+						0
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								5,
+								-2.5
+							],
+							"size": [
+								2,
+								10,
+								5
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "left_fin",
+					"pivot": [
+						-5,
+						3,
+						-4
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-12,
+								1,
+								-6.5
+							],
+							"size": [
+								10,
+								2,
+								5
+							],
+							"uv": [
+								52,
+								42
+							]
+						}
+					]
+				},
+				{
+					"name": "right_fin",
+					"pivot": [
+						5,
+						3,
+						-4
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								2,
+								1,
+								-6.5
+							],
+							"size": [
+								10,
+								2,
+								5
+							],
+							"uv": [
+								52,
+								52
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

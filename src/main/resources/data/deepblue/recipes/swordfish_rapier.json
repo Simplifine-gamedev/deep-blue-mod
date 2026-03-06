@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "  B",
+    " B ",
+    "S  "
+  ],
+  "key": {
+    "B": {
+      "item": "deepblue:swordfish_bill"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "result": {
+    "item": "deepblue:swordfish_rapier",
+    "count": 1
+  }
+}

@@ -1,0 +1,298 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.blue_whale",
+				"texture_width": 256,
+				"texture_height": 256,
+				"visible_bounds_width": 4,
+				"visible_bounds_height": 4,
+				"visible_bounds_offset": [
+					0,
+					1,
+					0
+				]
+			},
+			"bones": [
+				{
+					"name": "root",
+					"pivot": [
+						0,
+						0,
+						0
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [
+						0,
+						5,
+						0
+					],
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0,
+								-20
+							],
+							"size": [
+								10,
+								10,
+								40
+							],
+							"uv": [
+								0,
+								0
+							]
+						}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [
+						0,
+						5,
+						-20
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-5,
+								0,
+								-34
+							],
+							"size": [
+								10,
+								8,
+								14
+							],
+							"uv": [
+								0,
+								52
+							]
+						}
+					]
+				},
+				{
+					"name": "jaw",
+					"pivot": [
+						0,
+						3,
+						-27
+					],
+					"parent": "head",
+					"cubes": [
+						{
+							"origin": [
+								-4,
+								-2,
+								-33
+							],
+							"size": [
+								8,
+								3,
+								12
+							],
+							"uv": [
+								0,
+								151
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_base",
+					"pivot": [
+						0,
+						5,
+						20
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-3,
+								0,
+								20
+							],
+							"size": [
+								6,
+								6,
+								10
+							],
+							"uv": [
+								0,
+								76
+							]
+						}
+					]
+				},
+				{
+					"name": "tail_stock",
+					"pivot": [
+						0,
+						5,
+						30
+					],
+					"parent": "tail_base",
+					"cubes": [
+						{
+							"origin": [
+								-2,
+								0,
+								30
+							],
+							"size": [
+								4,
+								4,
+								8
+							],
+							"uv": [
+								0,
+								94
+							]
+						}
+					]
+				},
+				{
+					"name": "left_fluke",
+					"pivot": [
+						-6,
+						5,
+						38
+					],
+					"parent": "tail_stock",
+					"cubes": [
+						{
+							"origin": [
+								-12,
+								0,
+								37
+							],
+							"size": [
+								12,
+								1,
+								6
+							],
+							"uv": [
+								0,
+								108
+							]
+						}
+					]
+				},
+				{
+					"name": "right_fluke",
+					"pivot": [
+						6,
+						5,
+						38
+					],
+					"parent": "tail_stock",
+					"cubes": [
+						{
+							"origin": [
+								0,
+								0,
+								37
+							],
+							"size": [
+								12,
+								1,
+								6
+							],
+							"uv": [
+								0,
+								117
+							]
+						}
+					]
+				},
+				{
+					"name": "dorsal",
+					"pivot": [
+						0,
+						10,
+						15
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-1,
+								5,
+								13
+							],
+							"size": [
+								2,
+								3,
+								4
+							],
+							"uv": [
+								0,
+								126
+							]
+						}
+					]
+				},
+				{
+					"name": "left_flipper",
+					"pivot": [
+						-5,
+						3,
+						-8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								-12,
+								0,
+								-10
+							],
+							"size": [
+								10,
+								2,
+								4
+							],
+							"uv": [
+								0,
+								135
+							]
+						}
+					]
+				},
+				{
+					"name": "right_flipper",
+					"pivot": [
+						5,
+						3,
+						-8
+					],
+					"parent": "body",
+					"cubes": [
+						{
+							"origin": [
+								2,
+								0,
+								-10
+							],
+							"size": [
+								10,
+								2,
+								4
+							],
+							"uv": [
+								0,
+								143
+							]
+						}
+					]
+				}
+			]
+		}
+	]
+}

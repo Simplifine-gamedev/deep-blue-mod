@@ -1,0 +1,27 @@
+{
+    "schemaVersion": 1,
+    "id": "deepblue",
+    "version": "${version}",
+    "name": "Deep Blue - Ocean Megafauna",
+    "description": "Adds majestic ocean creatures including whales, sharks, and the mysterious giant squid to Minecraft's oceans.",
+    "authors": ["Ege Kaanduman"],
+    "contact": {
+        "homepage": "https://github.com/egekaanduman/deep-blue",
+        "sources": "https://github.com/egekaanduman/deep-blue"
+    },
+    "license": "MIT",
+    "icon": "assets/deepblue/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": ["com.deepblue.DeepBlueMod"],
+        "client": ["com.deepblue.DeepBlueModClient"]
+    },
+    "mixins": [],
+    "depends": {
+        "fabricloader": ">=${loader_version}",
+        "minecraft": "~${minecraft_version}",
+        "java": ">=17",
+        "fabric-api": "*",
+        "geckolib": "*"
+    }
+}
