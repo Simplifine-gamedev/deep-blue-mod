@@ -28,7 +28,7 @@ A Minecraft Fabric mod that adds majestic ocean creatures to the game, bringing 
 
 ## Installation
 
-1. Install [Fabric Loader](https://fabricmc.net/) for Minecraft 1.20.1
+1. Install [Fabric Loader](https://fabricmc.net/) for Minecraft 1.20.4
 2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
 3. Install [GeckoLib](https://modrinth.com/mod/geckolib)
 4. Download Deep Blue and place in your `mods` folder
@@ -43,10 +43,10 @@ The built JAR will be in `build/libs/`
 
 ## Requirements
 
-- Minecraft 1.20.1
+- Minecraft 1.20.4
 - Fabric Loader 0.15.6+
-- Fabric API 0.92.2+
-- GeckoLib 4.4.7+
+- Fabric API 0.96.4+
+- GeckoLib 4.4.4+
 
 ## Supported Versions
 
