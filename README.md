@@ -33,12 +33,22 @@ A Minecraft Fabric mod that adds majestic ocean creatures to the game, bringing 
 - **Loot Drops**: Fish, bones, rare items from each creature
 - **GeckoLib Animations**: Smooth, realistic swimming animations
 
+## Downloads
+
+Pre-built releases are available in the `releases/` folder:
+
+### Minecraft 1.21.1 (Recommended)
+| Mod Loader | Download |
+|------------|----------|
+| **Fabric** | [deep-blue-fabric-1.21.1-1.0.0.jar](releases/1.21.1/deep-blue-fabric-1.21.1-1.0.0.jar) |
+| **NeoForge** | [deep-blue-neoforge-1.21.1-1.0.0.jar](releases/1.21.1/deep-blue-neoforge-1.21.1-1.0.0.jar) |
+
 ## Installation
 
-1. Install [Fabric Loader](https://fabricmc.net/) for Minecraft 1.20.1
-2. Install [Fabric API](https://modrinth.com/mod/fabric-api)
-3. Install [GeckoLib](https://modrinth.com/mod/geckolib)
-4. Download Deep Blue and place in your `mods` folder
+1. Install your preferred mod loader ([Fabric](https://fabricmc.net/) or [NeoForge](https://neoforged.net/))
+2. Install [GeckoLib](https://modrinth.com/mod/geckolib) (required dependency)
+3. For Fabric: Also install [Fabric API](https://modrinth.com/mod/fabric-api)
+4. Download the appropriate Deep Blue jar from above and place in your `mods` folder
 
 ## Building from Source
 
@@ -57,11 +67,11 @@ The built JAR will be in `build/libs/`
 
 ## Supported Versions
 
-| Branch | Minecraft | Status |
-|--------|-----------|--------|
-| `main` | 1.20.1 | ✅ Active |
-| `1.20.4` | 1.20.4 | ✅ Supported |
-| `1.21.1` | 1.21.1 | 🔜 Coming soon |
+| Version | Fabric | NeoForge | Status |
+|---------|--------|----------|--------|
+| **1.21.1** | ✅ | ✅ | **Recommended** |
+| 1.20.4 | ✅ | ✅ | Supported |
+| 1.20.1 | ✅ | - | Supported |
 
 ## Credits
 

@@ -28,4 +28,5 @@ Thumbs.db
 *.log
 *.jar
 !gradle/wrapper/*.jar
+!releases/**/*.jar
 gradle.zip
