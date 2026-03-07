@@ -19,7 +19,6 @@ import net.minecraft.world.Heightmap;
 import net.minecraft.world.biome.BiomeKeys;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import software.bernie.geckolib.GeckoLib;
 
 public class DeepBlueMod implements ModInitializer {
     public static final String MOD_ID = "deepblue";
@@ -28,7 +27,7 @@ public class DeepBlueMod implements ModInitializer {
     // Entity Types
     public static final EntityType<HumpbackWhaleEntity> HUMPBACK_WHALE = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "humpback_whale"),
+            Identifier.of(MOD_ID, "humpback_whale"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, HumpbackWhaleEntity::new)
                     .dimensions(EntityDimensions.fixed(4.0f, 2.5f))
                     .trackRangeChunks(10)
@@ -37,7 +36,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<BlueWhaleEntity> BLUE_WHALE = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "blue_whale"),
+            Identifier.of(MOD_ID, "blue_whale"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, BlueWhaleEntity::new)
                     .dimensions(EntityDimensions.fixed(6.0f, 3.0f))
                     .trackRangeChunks(12)
@@ -46,7 +45,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<OrcaEntity> ORCA = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "orca"),
+            Identifier.of(MOD_ID, "orca"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, OrcaEntity::new)
                     .dimensions(EntityDimensions.fixed(2.5f, 1.5f))
                     .trackRangeChunks(8)
@@ -55,7 +54,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<GreatWhiteSharkEntity> GREAT_WHITE_SHARK = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "great_white_shark"),
+            Identifier.of(MOD_ID, "great_white_shark"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, GreatWhiteSharkEntity::new)
                     .dimensions(EntityDimensions.fixed(2.0f, 1.2f))
                     .trackRangeChunks(8)
@@ -64,7 +63,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<HammerheadSharkEntity> HAMMERHEAD_SHARK = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "hammerhead_shark"),
+            Identifier.of(MOD_ID, "hammerhead_shark"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, HammerheadSharkEntity::new)
                     .dimensions(EntityDimensions.fixed(1.8f, 1.0f))
                     .trackRangeChunks(8)
@@ -73,7 +72,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<WhaleSharkEntity> WHALE_SHARK = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "whale_shark"),
+            Identifier.of(MOD_ID, "whale_shark"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, WhaleSharkEntity::new)
                     .dimensions(EntityDimensions.fixed(3.5f, 2.0f))
                     .trackRangeChunks(10)
@@ -82,7 +81,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<NarwhalEntity> NARWHAL = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "narwhal"),
+            Identifier.of(MOD_ID, "narwhal"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, NarwhalEntity::new)
                     .dimensions(EntityDimensions.fixed(2.0f, 1.0f))
                     .trackRangeChunks(8)
@@ -91,7 +90,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<GiantSquidEntity> GIANT_SQUID = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "giant_squid"),
+            Identifier.of(MOD_ID, "giant_squid"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, GiantSquidEntity::new)
                     .dimensions(EntityDimensions.fixed(2.5f, 4.0f))
                     .trackRangeChunks(10)
@@ -100,7 +99,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<MolaMolaEntity> MOLA_MOLA = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "mola_mola"),
+            Identifier.of(MOD_ID, "mola_mola"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, MolaMolaEntity::new)
                     .dimensions(EntityDimensions.fixed(2.0f, 2.5f))
                     .trackRangeChunks(8)
@@ -109,7 +108,7 @@ public class DeepBlueMod implements ModInitializer {
 
     public static final EntityType<SwordfishEntity> SWORDFISH = Registry.register(
             Registries.ENTITY_TYPE,
-            new Identifier(MOD_ID, "swordfish"),
+            Identifier.of(MOD_ID, "swordfish"),
             FabricEntityTypeBuilder.create(SpawnGroup.WATER_CREATURE, SwordfishEntity::new)
                     .dimensions(EntityDimensions.fixed(1.5f, 0.8f))
                     .trackRangeChunks(8)
@@ -119,8 +118,6 @@ public class DeepBlueMod implements ModInitializer {
     @Override
     public void onInitialize() {
         LOGGER.info("Deep Blue - Ocean Megafauna loading...");
-        
-        GeckoLib.initialize();
         
         // Register spawn egg items
         ModItems.registerModItems();

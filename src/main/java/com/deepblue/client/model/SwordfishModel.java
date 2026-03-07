@@ -8,16 +8,16 @@ import software.bernie.geckolib.model.GeoModel;
 public class SwordfishModel extends GeoModel<SwordfishEntity> {
     @Override
     public Identifier getModelResource(SwordfishEntity entity) {
-        return new Identifier(DeepBlueMod.MOD_ID, "geo/swordfish.geo.json");
+        return Identifier.of(DeepBlueMod.MOD_ID, "geo/swordfish.geo.json");
     }
 
     @Override
     public Identifier getTextureResource(SwordfishEntity entity) {
-        return new Identifier(DeepBlueMod.MOD_ID, "textures/entity/swordfish.png");
+        return Identifier.of(DeepBlueMod.MOD_ID, "textures/entity/swordfish.png");
     }
 
     @Override
     public Identifier getAnimationResource(SwordfishEntity entity) {
-        return new Identifier(DeepBlueMod.MOD_ID, "animations/swordfish.animation.json");
+        return Identifier.of(DeepBlueMod.MOD_ID, "animations/swordfish.animation.json");
     }
 }

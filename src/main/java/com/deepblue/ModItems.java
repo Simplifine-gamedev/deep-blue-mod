@@ -1,11 +1,11 @@
 package com.deepblue;
 
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
+import net.minecraft.component.type.FoodComponent;
 import net.minecraft.entity.EntityType;
 import net.minecraft.entity.effect.StatusEffectInstance;
 import net.minecraft.entity.effect.StatusEffects;
 import net.minecraft.entity.mob.MobEntity;
-import net.minecraft.item.FoodComponent;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.SpawnEggItem;
@@ -47,59 +47,59 @@ public class ModItems {
     public static Item SWORDFISH_SPAWN_EGG;
 
     private static Item registerItem(String name, Item item) {
-        return Registry.register(Registries.ITEM, new Identifier(DeepBlueMod.MOD_ID, name), item);
+        return Registry.register(Registries.ITEM, Identifier.of(DeepBlueMod.MOD_ID, name), item);
     }
 
     private static Item registerSpawnEgg(String name, EntityType<? extends MobEntity> entityType, int primaryColor, int secondaryColor) {
         Item egg = new SpawnEggItem(entityType, primaryColor, secondaryColor, new Item.Settings());
-        return Registry.register(Registries.ITEM, new Identifier(DeepBlueMod.MOD_ID, name), egg);
+        return Registry.register(Registries.ITEM, Identifier.of(DeepBlueMod.MOD_ID, name), egg);
     }
 
     public static void registerModItems() {
         // Register custom loot items
         WHALE_MEAT = registerItem("whale_meat", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(4).saturationModifier(0.3f).meat().build())));
+                .food(new FoodComponent.Builder().nutrition(4).saturationModifier(0.3f).build())));
         COOKED_WHALE_MEAT = registerItem("cooked_whale_meat", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(8).saturationModifier(0.8f).meat().build())));
+                .food(new FoodComponent.Builder().nutrition(8).saturationModifier(0.8f).build())));
         SHARK_FIN = registerItem("shark_fin", new Item(new Item.Settings()));
         SHARK_TOOTH = registerItem("shark_tooth", new Item(new Item.Settings()));
         SQUID_TENTACLE = registerItem("squid_tentacle", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.2f).build())));
+                .food(new FoodComponent.Builder().nutrition(3).saturationModifier(0.2f).build())));
         NARWHAL_TUSK = registerItem("narwhal_tusk", new Item(new Item.Settings()));
         WHALE_BLUBBER = registerItem("whale_blubber", new Item(new Item.Settings()));
         SWORDFISH_BILL = registerItem("swordfish_bill", new Item(new Item.Settings()));
         RAW_FISH_FILLET = registerItem("raw_fish_fillet", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(2).saturationModifier(0.1f).build())));
+                .food(new FoodComponent.Builder().nutrition(2).saturationModifier(0.1f).build())));
         COOKED_FISH_FILLET = registerItem("cooked_fish_fillet", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build())));
+                .food(new FoodComponent.Builder().nutrition(6).saturationModifier(0.6f).build())));
         SUNFISH_MEAT = registerItem("sunfish_meat", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(3).saturationModifier(0.2f).build())));
+                .food(new FoodComponent.Builder().nutrition(3).saturationModifier(0.2f).build())));
         
         // Cooked squid tentacle - better than raw
         COOKED_SQUID_TENTACLE = registerItem("cooked_squid_tentacle", new Item(new Item.Settings()
-                .food(new FoodComponent.Builder().hunger(6).saturationModifier(0.6f).build())));
+                .food(new FoodComponent.Builder().nutrition(6).saturationModifier(0.6f).build())));
         
         // Shark fin soup - gives water breathing
         SHARK_FIN_SOUP = registerItem("shark_fin_soup", new Item(new Item.Settings()
                 .food(new FoodComponent.Builder()
-                        .hunger(8)
+                        .nutrition(8)
                         .saturationModifier(0.8f)
                         .statusEffect(new StatusEffectInstance(StatusEffects.WATER_BREATHING, 6000, 0), 1.0f)
                         .statusEffect(new StatusEffectInstance(StatusEffects.DOLPHINS_GRACE, 3000, 0), 1.0f)
                         .build())
                 .maxCount(16)));
         
-        // Shark tooth dagger - fast attack, low damage
+        // Shark tooth dagger - using iron material
         SHARK_TOOTH_DAGGER = registerItem("shark_tooth_dagger", 
-                new SwordItem(ToolMaterials.IRON, 2, -1.4f, new Item.Settings()));
+                new SwordItem(ToolMaterials.IRON, new Item.Settings()));
         
-        // Narwhal spear - high damage, slow
+        // Narwhal spear - using diamond material
         NARWHAL_SPEAR = registerItem("narwhal_spear",
-                new SwordItem(ToolMaterials.DIAMOND, 5, -3.0f, new Item.Settings()));
+                new SwordItem(ToolMaterials.DIAMOND, new Item.Settings()));
         
-        // Swordfish rapier - medium damage, very fast
+        // Swordfish rapier - using iron material
         SWORDFISH_RAPIER = registerItem("swordfish_rapier",
-                new SwordItem(ToolMaterials.IRON, 3, -1.0f, new Item.Settings()));
+                new SwordItem(ToolMaterials.IRON, new Item.Settings()));
 
         // Register spawn eggs
         HUMPBACK_WHALE_SPAWN_EGG = registerSpawnEgg("humpback_whale_spawn_egg", DeepBlueMod.HUMPBACK_WHALE, 0x3C464F, 0x5A6A7A);
