@@ -221,32 +221,32 @@ S = Stick
 4. Place the jar in your `mods` folder
 5. Launch Minecraft!
 
+## Requirements
+
+- Minecraft 1.21.1 (or 1.20.1/1.20.4)
+- Fabric Loader 0.16.0+ or NeoForge 21.1+
+- Fabric API (for Fabric)
+- GeckoLib 4.7+
+- Java 21+ (Java 17 for 1.20.x)
+
 ## Building from Source
 
 ```bash
-# Clone the repository
 git clone https://github.com/Simplifine-gamedev/deep-blue-mod.git
 cd deep-blue-mod
-
-# Build the mod
 ./gradlew build
 ```
 
 The built JAR will be in `build/libs/`
 
----
-
-## Credits
-
-- **Developer**: Ege Kaanduman
-- **Models & Textures**: Created with Blockbench
-- **Animation System**: GeckoLib
-- **Organization**: [Simplifine Gamedev](https://github.com/Simplifine-gamedev)
-
 ## License
 
 MIT License - Feel free to use, modify, and distribute.
 
+## Support
+
+- **Discord**: [Join our Discord](https://discord.gg/bvdpdT26Tq)
+
 ---
 
-*Part of the Minecraft Animal Modpacks project by Simplifine Gamedev*
+*Made by Orca*
