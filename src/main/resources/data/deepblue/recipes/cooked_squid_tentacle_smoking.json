@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smoking",
+  "ingredient": {
+    "item": "deepblue:squid_tentacle"
+  },
+  "result": "deepblue:cooked_squid_tentacle",
+  "experience": 0.35,
+  "cookingtime": 100
+}

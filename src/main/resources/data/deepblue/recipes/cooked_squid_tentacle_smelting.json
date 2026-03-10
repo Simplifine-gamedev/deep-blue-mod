@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": {
+    "item": "deepblue:squid_tentacle"
+  },
+  "result": "deepblue:cooked_squid_tentacle",
+  "experience": 0.35,
+  "cookingtime": 200
+}
